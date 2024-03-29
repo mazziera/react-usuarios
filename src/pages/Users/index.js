@@ -7,7 +7,7 @@ import Bin from '../../assets/bin.svg';
 import H1 from '../../components/Title';
 import ContainerItens from "../../components/ContainerItens";
 
-import { Container, Image, Button } from "./styles";
+import { Container, Image, Button, UserInfo, BinButton } from "./styles";
 
 const Users = function () {
   // >>> codigo javascript <<<
@@ -49,11 +49,14 @@ const Users = function () {
         <ul>
           {users.map((user) => (
             <li key={user.id}>
+              <UserInfo>
               <p>{user.name}</p> <p>{user.age} anos</p>
 
-              <button  onClick={() => deleteUser(user.id)} className="bin-image">
+              <BinButton  onClick={() => deleteUser(user.id)} className="bin-image">
                 <img alt="bin image" src={Bin} />
-              </button>
+              </BinButton>
+
+              </UserInfo>
             </li>
           ))
           }

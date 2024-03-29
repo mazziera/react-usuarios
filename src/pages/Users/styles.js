@@ -18,22 +18,41 @@ export const Image = styled.img`
     margin-top: 30px;
 `;
 
-// export const ContainerItens = styled.div`
-//     width: 414px;
-//     min-height: calc(100vh - 70px);
-//     padding: 25px;
-//     background: linear-gradient(157.44deg,
-//     rgba(255, 255, 255, 0.6) 0.84%,
-//     rgba(255, 255, 255, 0.6) 0.85%,
-//     rgba(255, 255, 255, 0.15) 100%);
-//     border-radius: 61px 61px 0px 0px;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 40px;
-    
+export const UserInfo = styled.div`
+    height: 58px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background: linear-gradient(157.44deg,
+    rgba(255, 255, 255, 0.6) 0.84%,
+    rgba(255, 255, 255, 0.6) 0.85%,
+    rgba(255, 255, 255, 0.15) 100%);
+    border-radius: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    color: #FFFFFF;
 
-    
-// `;
+    p {
+        text-align: center;
+        
+    }
+`;
+
+export const BinButton = styled.button`
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+
+    &:hover{
+        opacity: 0.6;
+    }
+`;
 
 export const Button = styled(Link)`
     width: 342px;
@@ -64,3 +83,5 @@ export const Button = styled(Link)`
         transform: rotateY(180deg);
     }
 `;
+
+
